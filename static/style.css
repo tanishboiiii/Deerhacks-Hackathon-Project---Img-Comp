@@ -1,0 +1,182 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+img {
+    margin: 0px auto;
+    width: 100%;
+}
+body {
+    margin: 0;
+    background-color: #E6E8E6;
+}
+
+p {
+    font-size: 24px;
+    margin: 20px;
+    color: #2D93AD;
+}
+
+h2 {
+    margin: 10px;
+    color: #080708;
+}
+
+.navbar {
+    margin-top: 0;
+    top: 0px;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    padding: 10px;
+    display: flex;
+    background-color: #080708;
+    align-items: center;
+}
+
+.navbar img {
+    margin-left: 20px;
+    margin: 0px;
+    width: 100px;
+}
+
+.navbar p {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #71677C;
+}
+
+.intro-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.fade-in-image { 
+    animation: fadeIn 3s; 
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    /* Highlight color */
+    background-color: #ffc99a;
+
+    content: "";
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 60%;
+    left: -2px;
+    bottom: 0;
+    z-index: -1;
+    transform: rotate(-2deg);
+}
+
+.intro-block {
+    margin-top: 100px;
+}
+
+.intro-imgs {
+    box-shadow: 0px 0px 5px black;
+}
+
+.try-it {
+    margin-top: 100px;
+}
+
+footer {
+    position: fixed;
+
+    left: 0px;  
+    bottom: 0px;
+    width: 100%;  
+    text-align: center;  
+    background-color: #080708;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+footer h2 {
+    padding: 10px;
+    color: #71677C;
+}
+
+footer a {
+    justify-content: space-between;
+    color: #E6E8E6;
+    flex-direction: row;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="file"] {
+    display: inline;
+}
+
+
+.image-upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.image-upload img {
+    width: 100px;
+    height: 100px;
+}
+
+.image-upload:hover {
+    background-color: #f2f2f2;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    background-color: #2D93AD;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+button[type="submit"]:hover {
+    opacity: 50%;
+}
+
+@media screen and (min-width: 576px) {
+    .intro-text {
+        margin: 0px;
+        width: 100%;
+    }
+    .site-body {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .intro-imgs {
+        flex-direction: column;
+        width: 50%;
+    }
+    .intro-block {
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+    
+}
